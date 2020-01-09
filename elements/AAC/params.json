@@ -1,0 +1,110 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 40,
+        "width": 40
+    },
+    "display": "LOADERR KW",
+    "events": {
+        "AAD": {
+            "caption": "Scripts Loaded",
+            "doc": "Fires when the script(s) is fully loaded. (As a result of .onLoad() event attached to the script.)",
+            "name": "scripts_loaded"
+        }
+    },
+    "fields": {
+        "AAE": {
+            "caption": "Script URL(s)",
+            "doc": "The URL to the script to load. This is the URL passed to the script tag's \"src\" attribute. Multiple scripts can be loaded by making this a comma separated list of script URLs.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "scripturl",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "Test for Script URLs",
+            "default_val": true,
+            "doc": "If set to \"Yes\" (the default), LOADERR checks to see if this specific script URL is already loaded before injecting it to the page. If you don't care about a specific script source, you can alternatively check for the existence of a function before injecting the script, using \"Test for Function\" below.",
+            "editor": "DynamicValue",
+            "name": "test_for_script_url",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AAH": {
+            "caption": "Test for Function(s)",
+            "doc": "If supplied, LOADERR checks for the existence of this function before injecting the requested Script URL. For example, suppose you want to load moment.js only if moment is not already a function (and you're happy with any version of moment, not just the specific one you specified in Script URL). In that case, set this text field to \"moment\" and set Test for Script URL to \"no\". If Script URL(s) is a comma-separated list of scripts to load, Test for Function(s) must ALSO be a comma-separated list of scripts to load, with the same number of elements.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "test_for_function",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AAN": {
+            "caption": "Execute on Page Load",
+            "default_val": true,
+            "doc": "If set to \"Yes\" (the default), LOADERR will load the requested scripts as soon as the element is loaded on the page. If set to \"No\", LOADERR will not attempt script loading until told to do so via the LOAD Script action.",
+            "editor": "DynamicValue",
+            "name": "load_on_page_load",
+            "rank": 3,
+            "value": "boolean"
+        }
+    },
+    "icon": "ion-code-download",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AAI": {
+            "caption": "Document Scripts",
+            "doc": "The URLs of all external scripts specified in the page's head (before ",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "document_scripts",
+            "value": "text"
+        },
+        "AAJ": {
+            "caption": "Scripts to be Loaded",
+            "doc": "The URLs of the scripts that you've requested that will be loaded.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "scripts_to_load",
+            "value": "text"
+        },
+        "AAK": {
+            "caption": "Loaded Scripts",
+            "doc": "The URLs of scripts that have completed loading.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "loaded_scripts",
+            "value": "text"
+        },
+        "AAL": {
+            "caption": "Loading Complete",
+            "doc": "Becomes yes when all requested scripts have been loaded.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "loading_complete",
+            "value": "boolean"
+        },
+        "AAM": {
+            "caption": "Error Scripts",
+            "doc": "The URLs of scripts that had errors during loading.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "error_scripts",
+            "value": "text"
+        }
+    }
+}

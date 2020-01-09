@@ -1,0 +1,18 @@
+{
+    "caption": "LOAD Script",
+    "doc": "Execute this Action to trigger loading of the scripts specified in LOADERR's main interface.",
+    "fields": {
+        "AAP": {
+            "caption": "LOAD Script",
+            "editor": "Label",
+            "name": "load_script_info1",
+            "rank": 0
+        },
+        "AAQ": {
+            "caption": "Execute this Action to trigger loading of the scripts specified in LOADERR's main interface. This is mostly useful in conjunction with the \"Execute on Page Load\" option being set to \"No\".",
+            "editor": "Label",
+            "name": "load_script_info2",
+            "rank": 1
+        }
+    }
+}

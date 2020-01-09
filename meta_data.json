@@ -1,0 +1,13 @@
+{
+    "categories": {
+        "0": "data (things)",
+        "1": "technical",
+        "2": "productivity"
+    },
+    "demo_page": "https://loaderr-demo.bubbleapps.io/version-test/index/sample:user?debug_mode=true",
+    "description": "Need to load a JavaScript library into your page? Too busy to DIY? Too skint for a paid plan?\n\nLOADERR to the rescue... Inject any script, into any Bubble app page.\n\nLOADERR is Karma-Ware: Support awesome Bubble plugins here — https://grupz.com/karma",
+    "image": "//s3.amazonaws.com/appforest_uf/f1576260135796x612714397799744900/loaderr-blaster.svg",
+    "license": "open_source",
+    "name": "LOADERR: Load JavaScript Libraries",
+    "plugin_instructions": "Drop on page. Configure. Load what you need. Get notified when it's done. Take action.\n\n#HanShotFirst"
+}
